@@ -1,5 +1,7 @@
 # Coding workshop
 
+This workshop is intended to guide you through spme basic coding techniques as well as give you an introduction to programming an arduino board. If at any point you have a question, don't hesitate to ask one of the HURC members for guidance.
+
 ## Getting started:
 
 Installing the Arduino IDE
@@ -147,4 +149,5 @@ Write a function that takes a list of strings an prints them, one per line, in a
 \* frame__ \*  
 \*\*\*\*\*\*\*\*\*  
 
-NOTE: Underscores represent spaces.
+NOTE: Underscores represent spaces.  
+Use a separate function for determining the frame width that takes in the list of words as an input and a separate function for printing a line of the frame, that takes in a word and the frame width.

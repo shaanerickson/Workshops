@@ -33,14 +33,14 @@ The first thing you need to know before getting started are the components most 
 4. LEDs - LED stands for Light Emitting Diode. In its simplest form, it turns current into light and heat, while at the same time acting like a resistor and producing a voltage drop. Because LEDs are diodes, it is important to know that they only work if connected in the proper direction (the longer leg is the positive end, the shorter leg is the negative end).
 5. Capacitors - Capacitors act like buckets for electricity; they store charge and can thus be used as temporary and small batteries (as well as producing some other useful phenomenon). Capacitors, like LEDs, are polarized and will only work if placed in circuit in the correct orientation.
 
-![Components](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.1.jpg)
+![Components](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.1.jpg)  
 Figure 0.1: The components we’ll be working with
 
 #### Breadboarding
 
 The next important step is learning the layout of the breadboard. A breadboard is a tool made for the quick prototyping of circuits. It is easy to build circuits, and fix mistakes because components and wires are stuck into the sockets of a breadboard rather than being soldered together permanently. Figure 0.2 shows the layout of an example breadboard. From the image you can see that if a breadboard is held vertically, the rows in the middle are connected together and essentially act as a single point. Similarly, the columns to the left and right of the breadboard are connected together. The rows are where you will be connecting most of your components and the columns are usually used for power and ground.
 
-![A breadboard](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.2.jpg)
+![A breadboard](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.2.jpg)  
 Figure 0.2: A standard breadboard
 
 In this section, we will review the basic building blocks of an Arduino sketch (the common name of an Arduino program), and work through several examples that will highlight these ideas. Our main reference for this section will be the official Arduino reference, which can be found [here](http://arduino.cc/en/Reference/HomePage). It is probably a lot to take in at once, but this page will probably answer any questions you might have about the syntax of the arduino language.
@@ -53,12 +53,12 @@ Ohm's Law is as follows: V = I * R, where V is voltage, I is current and R is re
 
 Looking at the schematic in Figure 0.3 you can see that the LED and resistor are in series in the circuit diagram. As you can see on the breadboard to the right, components in series need to share at least one row. The row allows for one component to conduct to another.
 
-![A circuit in series](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.3.jpg)
+![A circuit in series](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.3.jpg)  
 Figure 0.3: An LED and resistor in series
 
 Looking at the schematic in Figure 0.4 you can see that the resistor and capacitor are in parallel in the circuit diagram. As you can see on the breadboard on the right, components in parallel need to share both rows as points of contact. When components share rows in this way, current must flow into both of them at the same time, this making the connection a parallel one.
 
-![A circuit in parallel](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.4.jpg)
+![A circuit in parallel](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.4.jpg)  
 Figure 0.4: An LED and resistor in parallel
 
 ##### Exercises
@@ -67,19 +67,19 @@ Figure 0.4: An LED and resistor in parallel
 
 2. Kirchhoff's current law may be just as important as Ohms law in circuit analysis. It basically means that the amount of current entering a junction is equal to the current exiting the junction. That is Σ I = 0. In simpler terms, this law says that the amount of current entering a set of parallel components does not have to be equal; current splits. Voltage on the other hand is split evenly. Thus, the power that a certain component gets is affected by whether or not it is in series with something else. Build the circuit in Figure 0.5. Now what happened to the brightness of the LED?
 
-![An LED in parallel with 2 resistors in series](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.5.jpg)
+![An LED in parallel with 2 resistors in series](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.5.jpg)  
 Figure 0.5: An LED in parallel with 2 resistors in series
 
 3. Now rebuild your circuit, so that it looks like the one in figure 0.6. What happened to the brightness of the LED? Why?
 
-![An LED and 2 resistors in parallel](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.6.jpg)
+![An LED and 2 resistors in parallel](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.6.jpg)  
 Figure 0.6: An LED and 2 resistors in parallel
 
 #### Measuring resistance, voltage and current
 
 A multimeter is used to measure the V, I, and R -values at certain points in a circuit. Instead of using multiple separate devices, you can simply turn the dial on a multimeter to turn it into a voltmeter, ammeter or some other measurement device. The way multimeters measure voltage, current, and resistance are fundamentally different. A voltmeter must be placed in parallel to what you want to measure in order to find the voltage. An ammeter on the other hand must be placed in series with the circuit; the best way to do so is to pretend that it is another resistor. In Figure 0.7 you can see how a voltmeter and ammeter are placed properly in order to measure voltage or current. In order to measure the resistance of an element, you have to connect the multimeter in parallel to the component, Similarly to how you would measure voltage.
 
-![How to properly connect a voltmeter and ammeter](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.7.jpg)
+![How to properly connect a voltmeter and ammeter](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.7.jpg)  
 Figure 0.7: How to properly connect a voltmeter and ammeter
 
 ##### Exercises
@@ -96,7 +96,7 @@ Hopefully by now you have realized the difference between components in parallel
 
 An important consequence of the voltage drop is that it can be used to control a circuit precisely and towards our needs. The so-called voltage divider circuit uses this phenomenon to create an output voltage of our choosing. See Figure 0.8 for an example of a generic voltage divider circuit.
 
-![A standard voltage divider](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.8.jpg)
+![A standard voltage divider](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.8.jpg)  
 Figure 0.8: A standard voltage divider
 
 ##### Exercises
@@ -189,16 +189,16 @@ void loop () {
 ```
 
 Expected output:
-\#
-\#\#
-\#\#\#
-\#\#\#\#
-\#\#\#\#\#
-\#\#\#\#\#\#
-\#\#\#\#\#\#\#
-\#\#\#\#\#\#\#\#
-\#\#\#\#\#\#\#\#\#
-\#\#\#\#\#\#\#\#\#\#
+\#  
+\#\#  
+\#\#\#  
+\#\#\#\#  
+\#\#\#\#\#  
+\#\#\#\#\#\#  
+\#\#\#\#\#\#\#  
+\#\#\#\#\#\#\#\#  
+\#\#\#\#\#\#\#\#\#  
+\#\#\#\#\#\#\#\#\#\#  
 
 ##### Exercise 1.3 (arrays)
 
@@ -234,13 +234,13 @@ Call the first function in the second function so that after the Fibonacci array
 
 Write a function that takes a list of strings an prints them, one per line, in a rectangular frame. For example the list ["Hello", "World", "in", "a", "frame"] gets printed as:
 
-\*\*\*\*\*\*\*\*\*
-\* Hello__ \*
-\* World__\*
-\* in_____ \*
-\* a______\*
-\* frame__ \*
-\*\*\*\*\*\*\*\*\*
+\*\*\*\*\*\*\*\*\*  
+\* Hello__ \*  
+\* World__\*  
+\* in_____ \*  
+\* a______\*  
+\* frame__ \*  
+\*\*\*\*\*\*\*\*\*  
 
 NOTE: Underscores represent spaces.
 Use a separate function for determining the frame width that takes in the list of words as an input and a separate function for printing a line of the frame, that takes in a word and the frame width.

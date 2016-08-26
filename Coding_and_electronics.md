@@ -25,6 +25,7 @@ The first thing you need to know before getting started are the components most 
 4. LEDs - LED stands for Light Emitting Diode. In its simplest form, it turns current into light and heat, while at the same time acting like a resistor and producing a voltage drop. Because LEDs are diodes, it is important to know that they only work if connected in the proper direction (the longer leg is the positive end, the shorter leg is the negative end). LEDs and capacitors are the only components we will be working with that work only in one direction.
 5. Capacitors - Capacitors act like buckets for electricity; they store charge and can thus be used as temporary and small batteries (as well as producing some other useful phenomenon). Capacitors, like LEDs, are polarized and will only work if placed in circuit in the correct orientation.
 
+![alt tag](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/fig 0.1.png)
 
 In this section, we will review the basic building blocks of an Arduino sketch (the  common name of an Arduino program), and work through several examples that will highlight these ideas. Our main reference for this section will be the official Arduino reference, which can be found [here](http://arduino.cc/en/Reference/HomePage). It is probably a lot to take in at once, but this page will probably answer any questions you might have about the syntax of the arduino language.
 
@@ -32,7 +33,7 @@ In this section, we will review the basic building blocks of an Arduino sketch (
 
 Please review [this tutorial](http://arduino.cc/en/Guide/Board?from=Tutorial) for a general overlay of the Arduino Uno board. Although we may not be using the Uno for our actual projects, understanding the Uno board is key to understanding other Arduino boards. Don't worry if you don't understand everything just yet.
 
-## SOFTWARE - THE ARDUINO SKETCH 
+## SOFTWARE - THE ARDUINO SKETCH
 
 ### GENERAL LAYOUT
 
@@ -120,7 +121,7 @@ Expected output:
 
 Write an Arduino sketch that creates the following array {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} using a while loop.
 
-### FUNCTIONS 
+### FUNCTIONS
 
 Functions are the building blocks for more advanced logic. Instead of writing all logic inside the central loop function, we can create functions to separate out logic, and simply call those functions within the loop. Not only does this help us keep track of the specific purpose of parts of our code, but it also helps us keep our code clean and manageable.
 

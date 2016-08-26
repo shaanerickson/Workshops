@@ -25,7 +25,7 @@ The first thing you need to know before getting started are the components most 
 4. LEDs - LED stands for Light Emitting Diode. In its simplest form, it turns current into light and heat, while at the same time acting like a resistor and producing a voltage drop. Because LEDs are diodes, it is important to know that they only work if connected in the proper direction (the longer leg is the positive end, the shorter leg is the negative end). LEDs and capacitors are the only components we will be working with that work only in one direction.
 5. Capacitors - Capacitors act like buckets for electricity; they store charge and can thus be used as temporary and small batteries (as well as producing some other useful phenomenon). Capacitors, like LEDs, are polarized and will only work if placed in circuit in the correct orientation.
 
-![alt tag](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/fig 0.1.png)
+![alt tag](https://raw.githubusercontent.com/HarvardURC/Workshops/master/assets/coding_electronics/fig%200.1.jpg)
 
 In this section, we will review the basic building blocks of an Arduino sketch (the  common name of an Arduino program), and work through several examples that will highlight these ideas. Our main reference for this section will be the official Arduino reference, which can be found [here](http://arduino.cc/en/Reference/HomePage). It is probably a lot to take in at once, but this page will probably answer any questions you might have about the syntax of the arduino language.
 

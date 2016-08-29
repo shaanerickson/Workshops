@@ -248,3 +248,18 @@ Use a separate function for determining the frame width that takes in the list o
 ## Final Challenge
 
 For this final challenge you will merge the skills you've just learnt. But first you have to learn how to interface with the Arduino microcontroller. A Microcontroller both accepts and outputs current. There are designated pins in the Arduino which accept analog inputs or digital inputs (we will not delve into the details behind the differences). These inputs can then, with a little code, be used to control the output of the Arduino in such a way that we can output the right out amount of voltage to a target location (via a specific output pin). In this next exercise you will explore the magic of analog-digital interfacing. Such interfacing is essential in robotics, because most times robots need to be autonomous or controlled remotely, and a microcontroller like an Arduino can be programmed to control the circuitry in the way that we want it.
+
+Read the following to know how to read from and write to an Arduino pin:
+1. [PinMode](https://www.arduino.cc/en/Reference/PinMode)
+2. [DigitalRead](https://www.arduino.cc/en/Reference/DigitalRead)
+3. [DigitalWrite](https://www.arduino.cc/en/Reference/DigitalWrite)
+
+For this challenge you should find one or two more participants to pair up with. You will be building a 3-bit binary counter. You will need the following components:
+1. 1 Microcontroller
+2. 3 LEDs
+3. 2 pushbuttons
+4. Some resistors
+
+The counter should use the 3 LED's to display the numbers 0 to 7 in binary (000, 001, 010, 011, 100, 101, 110, 111) and the 2 pushbuttons to either increment and decrement the count. You should code to protect against over and underflow (if the user tries to count to higher than 7 or lower than 0, the count should not change).
+
+This challenge might prove to be quite difficult if you don't have a lot of electronics or coding experience. Don't hesitate to ask a HURC member for help. We're here to mentor you.

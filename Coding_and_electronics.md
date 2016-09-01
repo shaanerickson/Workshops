@@ -160,16 +160,23 @@ To upload a Arduino sketch from the IDE to the board, simply follow these steps 
 
 The Arduino IDE uses a custom programming syntax known as INO, which is really just a derivative of C/C++. Because of that, the syntax in Arduino sketches is almost exactly the same is in C or C++ programs. The full supported syntax is listed out in the [Arduino reference](https://www.arduino.cc/en/Reference/HomePage). Make sure you are comfortable with the structure section.
 
-For coding projects in any language, but Ino in specific you have to be able to use:
-1. if and if ... else statements
-2. for and while loops
-3. arithmetic operations
-4. comparison operations
-5. boolean operations
-6. constants and variables
-7. boolean, char, int, string and array data types
-8. Digital and Analog I/O. More precisely PinMode, AnalogWrite, AnalogRead, DigitalWrite, DigitalRead
-9. [Serial Print](https://www.arduino.cc/en/Serial/Print)
+For coding projects in any language, but Ino in specific you have to be able to use:  
+
+1. if and if ... else statements  
+
+2. for and while loops  
+
+3. arithmetic operations  
+
+4. comparison operations  
+
+5. boolean operations  
+
+6. constants and variables  
+
+7. boolean, char, int, string and array data types  
+
+8. [Serial Print](https://www.arduino.cc/en/Serial/Print)  
 
 This is a lot to go through right now. If you have any prior experience with coding, then most of this should simply be looking up the new syntax. If you aren't familiar with theses concepts, then don't try to go through all of the reference right now. Instead focus on the aspects that you think will help you solve a particular exercise as you go through this workshop.
 
@@ -178,6 +185,7 @@ Write an Arduino sketch to print "Hello World!". Make sure to use correct Arduin
 
 ##### Exercise 1.2 (for loops, variables)
 Build on the following Arduino sketch so that it prints a 10-level left-aligned pyramid of asterisks. Make sure you use the variable levels in your loop function.
+
 ```ino
 void setup () {
   int levels = 10;
@@ -189,6 +197,7 @@ void loop () {
 ```
 
 Expected output:
+
 \#  
 \#\#  
 \#\#\#  
